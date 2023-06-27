@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio CoderHouse</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Vendas</h1>
+    </header>
+    <main class="principal">
+        <section class="inclusao">
+            <div>
+                <p>Nome:</p>
+                <p><input type="text" name="name" id="txtname"></p>
+                <p>Preço Custo:</p>
+                    <p><input type="number" name="valor" id="txtvalor"></p>
+                <p>Percentual ICMS:</p>
+                    <p><input type="number" name="valor" id="txticms"></p>
+                <p>Categoria:</p>
+                    <select name="categoria" id="selcat" size="10">
+                    <p> 
+                        <option>Frutas</option>
+                        <option>Não Perecível</option>
+                        <option>Enlatados</option>
+                        <option>Bebidas</option>
+                    </p>
+                <p><input type="button" value="Cadastrar" onclick="incluirProduto()"></p>
+            </div>
+        </section>
+        <p>
+            <section class="listaprodutos">
+                <div id="res">
+                    <p><input type="button" value="Lista dos produtos" onclick="listarProdutos()"></p>
+                </div>
+            </section>
+        </p>
+
+    </main>
+    <footer>
+        <p>&copy; Desafios CoderHouse - EntregavelDoJoBS</p>
+    </footer>
+    <script src="page.js"></script>
+</body>
+</html>
