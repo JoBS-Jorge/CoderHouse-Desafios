@@ -64,7 +64,7 @@ let listaProdutos = document.getElementById("produtos")
 
 produtos.forEach(element => {
     let elemento = document.createElement("p")
-    elemento.innerHTML = `${element.titulo} - ${element.texto}`
+    elemento.innerHTML = `${element.id} - ${element.nome} - ${element.valor}`
     listaProdutos.appendChild(elemento)
 });
 
@@ -72,6 +72,6 @@ let listaPessoas = document.getElementById("pessoas")
 
 pessoas.forEach(element => {
     let elemento = document.createElement("p")
-    elemento.innerHTML = `${element.titulo} - ${element.texto}`
+    elemento.innerHTML = `${element.email} - ${element.nome} - ${element.telefone}`
     listaPessoas.appendChild(elemento)
 });
