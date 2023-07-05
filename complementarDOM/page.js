@@ -51,3 +51,27 @@ pessoas.push(pessoa3)
 console.log(publicacoes)
 console.log(produtos)
 console.log(pessoas)
+
+let listaPublicacoes = document.getElementById("publicacoes")
+
+publicacoes.forEach(element => {
+    let elemento = document.createElement("p")
+    elemento.innerHTML = `${element.titulo} - ${element.texto}`
+    listaPublicacoes.appendChild(elemento)
+});
+
+let listaProdutos = document.getElementById("produtos")
+
+produtos.forEach(element => {
+    let elemento = document.createElement("p")
+    elemento.innerHTML = `${element.titulo} - ${element.texto}`
+    listaProdutos.appendChild(elemento)
+});
+
+let listaPessoas = document.getElementById("pessoas")
+
+pessoas.forEach(element => {
+    let elemento = document.createElement("p")
+    elemento.innerHTML = `${element.titulo} - ${element.texto}`
+    listaPessoas.appendChild(elemento)
+});
